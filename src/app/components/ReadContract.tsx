@@ -17,7 +17,7 @@ export default function ReadContract({
     <>
       <button onClick={() => disconnect()}>Disconnect</button>
       <p>Connected Address : {address}</p>
-      {result ? <p>value : {result}</p> : "Loading..."}
+      <p>value :{result ? result : " Loading..."}</p>
     </>
   );
 }
