@@ -95,13 +95,16 @@ export default function CustomWallet({
 
     return (
       <>
-        <ReadContract counter={counter} result={redData?.toString()} />
+        <ReadContract
+          counter={counter}
+          result={redData ? redData?.toString() : ""}
+        />
         <WriteContract
           increament={increament}
           decreament={decreament}
           isPending={isPending}
           status={writingStatus}
-          hash={hash}
+          hash={hash || ""}
         />
       </>
     );
